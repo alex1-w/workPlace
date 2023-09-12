@@ -1,0 +1,15 @@
+.main {
+    
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        li {
+            a {
+                p {
+                    color: var(--p-dark);
+                }
+            }
+        }
+    }
+}

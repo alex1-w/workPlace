@@ -1,0 +1,24 @@
+.main {
+    background-color: var(--light-gray);
+    border-radius: 30px;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    // padding-left: 20px;
+    padding: 6px 0 6px 20px;
+    justify-content: space-between;
+
+    >div:first-child {
+        input {
+            color: var(--dark-gray);
+        }
+    }
+
+    button {
+        padding: 16px 40px;
+        border-radius: 30px;
+        background-color: var(--orange);
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
