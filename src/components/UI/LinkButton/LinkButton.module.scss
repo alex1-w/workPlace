@@ -1,0 +1,88 @@
+.bigLink {
+    border-radius: 10px;
+    width: 420px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    transition: 0.2s background-color;
+
+    p {
+        color: var(--green);
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: rgb(233, 233, 233);
+        transition: 0.2s background-color;
+    }
+}
+
+.miniLink {
+    border: 1px solid var(--green);
+    border-radius: 20px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s all;
+
+    p {
+        font-weight: 500;
+        color: var(--green);
+    }
+
+    &:hover {
+        transition: 0.2s all;
+        background-color: var(--green);
+
+        p {
+            color: var(--light);
+        }
+    }
+}
+
+.violetVariant {
+    border-radius: 50px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--violet);
+    transition: 0.2s all;
+    width: 200px;
+    height: 69px;
+
+    p {
+        color: var(--p-light);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &:hover {
+        transition: 0.2s all;
+        background-color: var(--green);
+
+        p {
+            color: var(--light);
+        }
+    }
+}
+
+.tagLink {
+    cursor: pointer;
+    width: fit-content;
+    border: 1px solid var(--light-gray);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.2s background-color;
+
+    &:hover {
+        transition: 0.2s background-color;
+        background-color: rgb(233, 233, 233);
+    }
+}

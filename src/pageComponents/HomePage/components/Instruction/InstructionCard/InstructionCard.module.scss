@@ -1,0 +1,12 @@
+.main {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    svg {
+        width: 82px;
+        height: 82px;
+    }
+}

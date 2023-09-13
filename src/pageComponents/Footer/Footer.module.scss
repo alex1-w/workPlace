@@ -1,0 +1,40 @@
+.main {
+    width: 100%;
+    // background-color: var(--secondary-bg);
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0 100px;
+    gap: 50px;
+}
+
+.topPart {
+    // width: 100%;
+    display: flex;
+    gap: 100px;
+
+    &__item {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+
+        h6 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+.socialsBlock {
+    display: flex;
+    flex-direction: row !important;
+    gap: 30px !important;
+}

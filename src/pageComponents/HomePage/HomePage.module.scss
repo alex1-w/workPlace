@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+
+  &__containerSections {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+  }
+}

@@ -8,13 +8,12 @@
         padding: 14px 30px;
 
         &:first-child {
-            background-color: var(--light-gray);
+            background-color: var(--light-gray) !important;
 
             p {
                 color: var(--green);
                 font-weight: 600;
             }
-
         }
 
         &:last-child {

@@ -1,9 +1,11 @@
 .main {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    max-width: 1300px;
+    padding: 25px 60px;
+    // max-width: 1300px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    background-color: var(--secondary-bg);
 }

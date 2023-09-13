@@ -1,0 +1,27 @@
+.main {
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    >div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+.instructionCardBlock {
+    display: flex;
+    justify-content: space-between;
+}

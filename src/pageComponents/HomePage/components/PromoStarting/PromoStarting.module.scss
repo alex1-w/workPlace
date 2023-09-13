@@ -1,0 +1,46 @@
+.main {
+    height: 734px;
+    background: linear-gradient(180deg, #E2A401 -1.38%, #E6A901 17.18%, #E3A401 28.99%, #E5A800 43.17%, #EEB301 77.27%, #EFB400 100%);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0;
+
+    gap: 20px;
+
+    >div:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        h3 {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--p-light);
+        }
+
+        h5 {
+            margin-top: 5px;
+            color: var(--p-light);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+
+.promoCards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imgBlock {
+    max-width: 1300px;
+    max-height: 730px;
+    position: relative;
+}
