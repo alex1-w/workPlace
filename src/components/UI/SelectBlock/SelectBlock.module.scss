@@ -1,0 +1,47 @@
+.selectWrapper {
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  width: 150px;
+  background-color: var(--main-bg);
+  border: 1px solid var(--light-gray);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  border-radius: 5px;
+  width: 100%;
+  background-color: var(--main-bg);
+  border: 1px solid var(--light-gray);
+  position: absolute;
+  top: 106%;
+  left: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.placeholder {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  p {
+    font-weight: 600;
+  }
+
+  svg {
+    transition: 0.2s transform;
+  }
+
+  &.active {
+    svg {
+      transition: 0.2s transform;
+      transform: rotate(180deg);
+    }
+  }
+}

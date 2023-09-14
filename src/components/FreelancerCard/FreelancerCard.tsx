@@ -3,17 +3,10 @@ import { Button } from "../UI/Button/Button";
 import LinkButton from "../UI/LinkButton/LinkButton";
 import styles from "./FreelancerCard.module.scss";
 import { FC } from "react";
+import { IFreelancer } from "@/types/IFreelancer";
 
-interface IFreelancerCard {
-    name: string;
-    profession: string;
-    countProject: number;
-    rating: number;
-    id: number;
-    img: any;
-}
 
-const FreelancerCard: FC<IFreelancerCard> = ({
+const FreelancerCard: FC<IFreelancer> = ({
     countProject,
     id,
     name,

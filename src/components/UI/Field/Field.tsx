@@ -6,11 +6,12 @@ interface IField {
     placeholder: string
     type: string
     btnName?: string
+    variant?: 'withButton' | 'simple'
 }
 
-export const Field: FC<IField & DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>> = ({ name = 'search', placeholder, btnName = 'Найти', ...rest }) => {
+export const Field: FC<IField & DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>> = ({ variant = 'withButton', name = 'search', placeholder, btnName = 'Найти', ...rest }) => {
     return (
-        <div className={styles.main}>
+        <div className={styles[variant]}>
             <div>
                 <input name={name} {...rest} placeholder={placeholder} />
             </div>

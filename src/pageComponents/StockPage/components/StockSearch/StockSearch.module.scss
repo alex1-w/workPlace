@@ -28,6 +28,29 @@
     }
 
     >div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        transition: 0.2s scale;
+
+        &:hover {
+            >svg {
+                transition: 0.2s scale;
+                scale: 1.4;
+            }
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        svg {
+            fill: var(--green);
+            height: 35px;
+        }
+
         span {
             color: var(--green);
         }

@@ -1,0 +1,18 @@
+.projectsBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    >div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
