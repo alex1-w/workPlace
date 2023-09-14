@@ -11,7 +11,7 @@ interface ILinkButton {
 
 const LinkButton: FC<ILinkButton> = ({ link, name, styleVariant }) => {
   return (
-    <Link href={link} className={cn(styles.link, styles[styleVariant])}>
+    <Link href={link} className={cn(styles[styleVariant])}>
       <p>{name}</p>
     </Link>
   );

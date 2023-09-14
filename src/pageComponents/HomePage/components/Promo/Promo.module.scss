@@ -47,22 +47,22 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
 
-.tagsBlock {
-    max-width: 500px;
-    gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
-
-    a {
-        border-radius: 20px;
+    &__tagsBlock {
+        max-width: 500px;
+        gap: 10px;
         display: flex;
-        padding: 10px 20px;
-        border: 1px solid var(--orange);
+        flex-wrap: wrap;
 
-        p {
-            color: var(--orange);
+        &__allCategoryLink {
+            border-radius: 20px;
+            display: flex;
+            padding: 10px 20px;
+            border: 1px solid var(--orange);
+
+            p {
+                color: var(--orange);
+            }
         }
     }
 }

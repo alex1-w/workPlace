@@ -1,3 +1,4 @@
+
 import styles from "./Authorizations.module.scss";
 import Link from "next/link";
 import React from "react";

@@ -4,11 +4,12 @@ import logo from "@/icons/Logo.svg";
 import { logoIcon } from "@/icons/icons";
 import Navigation from "./Navigation/Navigation";
 import Authorizations from "./Authorizations/Authorizations";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <header className={styles.main}>
-      {logoIcon}
+      <Link href='/'>   {logoIcon}</Link>
       <Navigation />
       <Authorizations />
     </header>
