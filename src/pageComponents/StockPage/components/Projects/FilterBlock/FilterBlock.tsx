@@ -7,11 +7,11 @@ import { useState } from 'react'
 const filterOptions = [
     {
         label: 'По возрастанию цены',
-        value: 'min'
+        value: 'formMin'
     },
     {
         label: 'По убыванию цены',
-        value: 'min'
+        value: 'fromMax'
     },
 ]
 
@@ -20,9 +20,11 @@ interface IFilterOptions {
 }
 
 export const FilterBlock = () => {
-    const [filter, setFilter] = useState<IFilterOptions>({ filter: filterOptions[0].value })
+    const [filterState, setFilter] = useState<IFilterOptions>({ filter: filterOptions[0].value })
 
     const changeHandler = (value: string) => setFilter({ filter: value })
+
+    const selectedFilter = filterOptions.find(item =>item.value === filterState.filter)
 
     return (
         <div className={styles.main}>
@@ -35,10 +37,9 @@ export const FilterBlock = () => {
             </div>
 
             <SelectBlock options={filterOptions}
-                selected={filterOptions[0]}
+                selected={selectedFilter || filterOptions[0]}
                 onChange={changeHandler}
                 placeholder={filterOptions[0].label}
-            // status='default'
             />
         </div>
     )

@@ -35,9 +35,11 @@
         transition: 0.2s scale;
 
         &:hover {
-            >svg {
-                transition: 0.2s scale;
-                scale: 1.4;
+            >a {
+                svg {
+                    transition: 0.2s scale;
+                    scale: 1.4;
+                }
             }
         }
 

@@ -21,6 +21,16 @@
         background-color: var(--orange);
         font-size: 16px;
         font-weight: 700;
+        transition: 0.2s background-color;
+
+        p {
+            color: var(--light-gray);
+        }
+
+        &:hover {
+            transition: 0.2s background-color;
+            background-color: var(--green);
+        }
     }
 }
 

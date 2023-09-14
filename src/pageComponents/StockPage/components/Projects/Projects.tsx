@@ -6,7 +6,7 @@ import { FilterBlock } from './FilterBlock/FilterBlock'
 
 export const Projects = () => {
     return (
-        <section className={styles.projectsBlock}>
+        <section className={styles.projectsBlock} id='projects'>
             <div>
                 <h3>{myProjects.length} - проектов по дизайну</h3>
                 <FilterBlock />

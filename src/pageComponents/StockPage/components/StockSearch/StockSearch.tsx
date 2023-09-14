@@ -33,7 +33,7 @@ const StockSearch: FC = () => {
                     <h3>
                         Ниже все заказы по <span>дизайну</span>
                     </h3>
-                    {arrowDownIcon}
+                    <a href="#projects">  {arrowDownIcon}</a>
                 </div>
             </div>
         </section>

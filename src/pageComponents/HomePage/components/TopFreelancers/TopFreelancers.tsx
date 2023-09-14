@@ -9,7 +9,7 @@ const TopFreelancers = () => {
         <section className={styles.main}>
             <h2>Топ фрилансеров</h2>
             <div>
-                {freelancers.map((item) => (
+                {freelancers.slice(0,8).map((item) => (
                     <FreelancerCard
                         countProject={item.countProject}
                         id={item.id}
