@@ -1,7 +1,7 @@
 'use client'
 import { arrowDownIcon, certificateIcon, clockIcon, educationIcon, languageIcon, worldIcon } from '@/icons/icons'
 import styles from './DetailedInfoComponent.module.scss'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useState, useRef } from 'react'
 
 const detailedUserInfo = [
@@ -32,7 +32,6 @@ const detailedUserInfo = [
     },
 
 ]
-type DetalePlaceholder = 'скрыть подробную информацию' | 'скрыть подробную информацию'
 
 export const DetailedInfoComponent = () => {
     const [showDetails, setShowDetails] = useState<boolean>(false)

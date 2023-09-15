@@ -19,7 +19,6 @@ export const WorksSection = () => {
                     <p>Создать ворк</p>
                 </Link>
                 {works.map(item => (
-
                     <MyWork key={item} />
                 ))}
             </div>
