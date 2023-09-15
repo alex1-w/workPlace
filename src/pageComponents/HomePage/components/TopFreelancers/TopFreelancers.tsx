@@ -1,5 +1,4 @@
 import styles from "./TopFreelancers.module.scss";
-import { FC } from "react";
 import FreelancerCard from "@/components/FreelancerCard/FreelancerCard";
 import LinkButton from "@/components/UI/LinkButton/LinkButton";
 import { freelancers } from "@/links/links.data";

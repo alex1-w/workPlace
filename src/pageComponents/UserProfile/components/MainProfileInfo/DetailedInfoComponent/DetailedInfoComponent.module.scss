@@ -1,0 +1,50 @@
+.main {
+    background-color: var(--light-gray);
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    transition: 0.2s transform;
+
+    >div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &.active {
+            svg {
+                transition: 0.2s transform;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.infoBlock {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+
+            >div:first-child {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            >div:last-child {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                width: 200px;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.main {
+    background-color: var(--secondary-bg);
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.infoContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__description {
+        max-width: 645px;
+    }
+
+    &__stack {
+        max-width: 640px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        color: var(--orange);
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+}

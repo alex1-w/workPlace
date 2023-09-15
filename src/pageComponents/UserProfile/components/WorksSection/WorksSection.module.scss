@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.worksSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--light-gray);
+    width: 308px;
+    height: 190px;
+    border-radius: 20px;
+    transition: 0.2s all;
+
+    >div {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: var(--green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s scale;
+    }
+
+    p {
+        font-weight: 600;
+        color: var(--green);
+        font-size: 24px;
+    }
+
+    &:hover {
+        background-color: var(--light-gray);
+        transition: 0.2s background-color;
+
+        >div {
+            transition: 0.2s scale;
+            scale: 1.2;
+        }
+    }
+}

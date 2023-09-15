@@ -1,4 +1,8 @@
 .projectsBlock {
+    // position: -webkit-sticky;
+    // position: sticky;
+    // top: 0;
+    // position: sticky;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -7,7 +11,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        // position: fixed;
+        // top: 0;
+        position: sticky;
+        top: 0;
     }
 }
 

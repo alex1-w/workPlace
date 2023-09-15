@@ -4,6 +4,7 @@ import LinkButton from "../UI/LinkButton/LinkButton";
 import styles from "./FreelancerCard.module.scss";
 import { FC } from "react";
 import { IFreelancer } from "@/types/IFreelancer";
+import Link from "next/link";
 
 
 const FreelancerCard: FC<IFreelancer> = ({
@@ -15,7 +16,7 @@ const FreelancerCard: FC<IFreelancer> = ({
     img,
 }) => {
     return (
-        <div className={styles.main}>
+        <Link href='user-profile' className={styles.main}>
             <div className={styles.mainContent}>
                 <Image alt="profileIcon" src={img} width={150} height={150} />
                 <div className={styles.cardDescription}>
@@ -25,7 +26,7 @@ const FreelancerCard: FC<IFreelancer> = ({
                 </div>
             </div>
             <LinkButton link="/" styleVariant="miniLink" name="Написать" />
-        </div>
+        </Link>
     );
 };
 
