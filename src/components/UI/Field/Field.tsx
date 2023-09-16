@@ -6,7 +6,7 @@ interface IField {
     placeholder: string
     type: string
     btnName?: string
-    variant?: 'withButton' | 'simple'
+    variant?: 'withButton' | 'simple' | "formVariant"
 }
 
 export const Field: FC<IField & DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>> = ({ variant = 'withButton', name = 'search', placeholder, btnName = 'Найти', ...rest }) => {

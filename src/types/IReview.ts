@@ -6,4 +6,5 @@ export interface IReview {
   reviewText: string;
   rating: number;
   type: ReviewType;
+  id: number
 }

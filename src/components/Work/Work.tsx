@@ -18,16 +18,13 @@ const Work: FC<IWork> = ({ description, id, img, title }) => {
         <div className={styles.main}>
             <div className={styles.head}>
                 <Image src={img} width="44" height="44" alt="profileImage" />
-
                 <p>{title}</p>
             </div>
 
             <div className={styles.description}>
-                <p>
-                    {description}
-                </p>
+                <p>{description}</p>
             </div>
-            <LinkButton link="/" name="Написать" styleVariant="miniLink"/>
+            <LinkButton link="/" name="Написать" styleVariant="miniLink" />
         </div>
     );
 };

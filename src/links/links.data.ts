@@ -2,6 +2,11 @@ import profileIcon from "@/icons/profileIcon.png";
 import { facebookIcon, inIcon, instagramIcon, twitterIcon } from "@/icons/icons"
 import { IFreelancer } from "@/types/IFreelancer";
 import { IOrder } from "@/types/IOrder";
+import { IReview } from "@/types/IReview";
+import image from "@/icons/profileImg.png";
+import siteImage from "@/icons/siteImage.png";
+
+
 
 export const topCategories = [
     {
@@ -304,5 +309,255 @@ export const jobLinks = [
     {
         title: "Соцсети и реклама",
         link: "/",
+    },
+];
+
+export const reviews: IReview[] = [
+    {
+        rating: 3,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[3],
+        type: 'positive'
+        , id: 109
+    },
+    {
+        rating: 5,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[9],
+        type: 'positive'
+        , id: 108
+    },
+    {
+        rating: 5,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[1],
+        type: 'positive'
+        , id: 12
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[5],
+        type: 'positive'
+        , id: 122
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[6],
+        type: 'positive'
+        , id: 133
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[3],
+        type: 'positive'
+        , id: 13
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[0],
+        type: 'positive'
+        , id: 33
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[0],
+        type: 'positive'
+        , id: 234
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[0],
+        type: 'positive'
+        , id: 1786
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[0],
+        type: 'positive'
+        , id: 1656
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[0],
+        type: 'positive'
+        , id: 1
+    },
+    {
+        rating: 2,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[1],
+        type: 'negative'
+        , id: 2
+    },
+    {
+        rating: 5,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[2],
+        type: 'positive'
+        , id: 3
+    },
+    {
+        rating: 3,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[3],
+        type: 'negative'
+        , id: 4
+    },
+    {
+        rating: 2,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[4],
+        type: 'negative'
+        , id: 5
+    },
+    {
+        rating: 5,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[5],
+        type: 'positive'
+        , id: 6
+    },
+    {
+        rating: 5,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[6],
+        type: 'positive'
+        , id: 7
+    },
+    {
+        rating: 4,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[7],
+        type: 'positive'
+        , id: 8
+    },
+    {
+        rating: 3,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[7],
+        type: 'positive'
+        , id: 9
+    },
+    {
+        rating: 2,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[7],
+        type: 'negative'
+        , id: 10
+    },
+    {
+        rating: 1,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[7],
+        type: 'negative'
+        , id: 11
+    },
+    {
+        rating: 2,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[1],
+        type: 'negative'
+        , id: 12
+    },
+    {
+        rating: 1,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[4],
+        type: 'negative'
+        , id: 132
+    },
+    {
+        rating: 2,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[6],
+        type: 'negative'
+        , id: 12432
+    },
+    {
+        rating: 1,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[4],
+        type: 'negative'
+        , id: 13242
+    },
+    {
+        rating: 1,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[7],
+        type: 'negative'
+        , id: 126324
+    },
+    {
+        rating: 1,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[8],
+        type: 'negative'
+        , id: 1902
+    },
+    {
+        rating: 1,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[1],
+        type: 'negative'
+        , id: 12
+    },
+    {
+        rating: 1,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[7],
+        type: 'negative'
+        , id: 1222
+    },
+    {
+        rating: 1,
+        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
+        user: freelancers[5],
+        type: 'negative'
+        , id: 2212
+    },
+]
+
+export const works = [
+    {
+        title: "Верстка landing page",
+        description: "Привет! Раз уж ты открыл этот work, то тебе нужен классный дизайн для твоего сайта. И да, поздравляю, ты по адресу! В UX/UI дизайне я уже 2 года и за это время успел поработать с очень крупными компаниями(КазМунайГаз, КБТУ, Hickmet travel, YLP delivery) и знаменитыми личностями (Ахметбек Нурсила, Артур Кривов). Создал для них очень крутые дизайны сайтов и не только. Хочешь и тебе сделаю? Выбери интересующий пакет и поехали!",
+        img: siteImage,
+        id: 1,
+    },
+    {
+        title: "Сделать дизайн сайта-каталога и посадить на какой нибудь ко...",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...",
+        img: siteImage,
+        id: 2,
+    },
+    {
+        title: "Сделать дизайн интернет-магазина",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...",
+        img: siteImage,
+        id: 3,
+    },
+    {
+        title: "Продвижение instagram ",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...",
+        img: siteImage,
+        id: 4,
+    },
+    {
+        title: "Срочно! Нужен веб дизайнер!",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed leo at hendrerit dictum diam, enim. Dolor in imperdiet ultrices mauris. Est vitae vulputate est nec cras. Turpis nunc ornare nulla neque, interdum. At pharetra consectetur nec est convallis...",
+        img: siteImage,
+        id: 5,
     },
 ];

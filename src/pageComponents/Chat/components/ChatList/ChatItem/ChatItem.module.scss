@@ -1,0 +1,29 @@
+.main {
+    width: 370px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 20px;
+
+    &:hover {
+        background-color: var(--light-green);
+    }
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        >p:first-child {
+            font-weight: 700;
+        }
+
+        >p:last-child {
+            white-space: nowrap;
+            max-width: 170px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}

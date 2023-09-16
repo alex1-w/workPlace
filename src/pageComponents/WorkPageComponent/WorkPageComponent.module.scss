@@ -1,0 +1,9 @@
+.main {
+    padding: 50px 0;
+}
+
+.mainSection {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 30px;
+}

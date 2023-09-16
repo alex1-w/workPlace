@@ -1,4 +1,30 @@
 .main {
+    width: 350px;
+    height: 230px;
+    padding: 15px;
+    border-radius: 15px;
     display: flex;
+    flex-direction: column;
     gap: 10px;
+    // border: 1px solid red;
+    border: 1px solid var(--light-gray);
+}
+
+
+.topPart {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.bottomPart {
+    p {
+        font-size: 14px;
+    }
 }

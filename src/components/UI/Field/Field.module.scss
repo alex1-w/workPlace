@@ -54,3 +54,22 @@
         display: none;
     }
 }
+
+.formVariant {
+    max-width: 300px;
+    border-bottom: 1px solid var(--gray);
+
+    >div:first-child {
+        input {
+            padding-left: 10px;
+            font-size: 18px;
+            width: 100%;
+            color: var(--gray);
+            height: 40px;
+        }
+    }
+
+    button {
+        display: none;
+    }
+}

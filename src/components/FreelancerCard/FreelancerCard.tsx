@@ -25,7 +25,7 @@ const FreelancerCard: FC<IFreelancer> = ({
                     <p>выпонено проектов: {countProject}</p>
                 </div>
             </div>
-            <LinkButton link="/" styleVariant="miniLink" name="Написать" />
+            <LinkButton link="/chat" styleVariant="miniLink" name="Написать" />
         </Link>
     );
 };

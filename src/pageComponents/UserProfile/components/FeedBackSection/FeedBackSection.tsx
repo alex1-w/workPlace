@@ -1,67 +1,47 @@
 'use client'
-import { IReview, ReviewType } from '@/types/IReview';
 import styles from './FeedBackSection.module.scss';
+import { IReview, ReviewType } from '@/types/IReview';
 import { FC, useState } from "react"
-import { freelancers } from '@/links/links.data';
-
-const reviews: IReview[] = [
-    {
-        rating: 4,
-        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
-        user: freelancers[0],
-        type: 'positive'
-
-    },
-    {
-        rating: 2,
-        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
-        user: freelancers[1],
-        type: 'negative'
-    },
-    {
-        rating: 5,
-        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
-        user: freelancers[2],
-        type: 'positive'
-    },
-    {
-        rating: 3,
-        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
-        user: freelancers[3],
-        type: 'negative'
-    },
-    {
-        rating: 2,
-        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
-        user: freelancers[4],
-        type: 'negative'
-    },
-    {
-        rating: 5,
-        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
-        user: freelancers[5],
-        type: 'positive'
-    },
-    {
-        rating: 5,
-        reviewText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus tincidunt eget eu, eget commodo condimentum non, fringilla fermentum. Morbi sed enim facilisis metus pretium leo, mauris. In egestas cursus orci dignissim in lectus nulla. ',
-        user: freelancers[6],
-        type: 'positive'
-    },
-]
+import { reviews } from '@/links/links.data';
+import { slicer } from '@/helpers/slicer';
+import ReviewItem from '@/components/ReviewItem/ReviewItem';
+import { motion } from 'framer-motion'
 
 const FeedBackSection: FC = () => {
-    const [reviewFilter, setReviewFilter] = useState<ReviewType>('positive')
+    const countPositiveReviews = reviews.filter(r => r.type === 'positive').length
+    const countNegativeReviews = reviews.filter(r => r.type === 'negative').length
+    const [showedReviews, setShowedReviews] = useState<number>(6)
+    const [filteredReviews, setFilteredReviews] = useState<IReview[]>(reviews.filter(r => r.type === 'positive'))
+
+    const changeReviewType = (e: any) => {
+        setFilteredReviews(reviews.filter(r => r.type === e.target.dataset.name))
+        setShowedReviews(6 )
+    }
+    const addReview = () => setShowedReviews((prev) => prev + 3)
+
 
     return (
-        <section>
-            <div>
-                <p>Положительные</p>
-
-                <p>Отрицательные</p>
+        <section className={styles.main}>
+            <div className={styles.filter}>
+                <p data-name='positive' onClick={changeReviewType}>Положительные {`(${countPositiveReviews})`}</p>
+                <p data-name='negative' onClick={changeReviewType}> Отрицательные {`(${countNegativeReviews})`}</p>
             </div>
 
-        </section>
+            <motion.div className={styles.feedBackBlock}>
+
+                {slicer(filteredReviews, showedReviews).map((review) => (
+                    <ReviewItem
+                        rating={review.rating}
+                        reviewText={review.reviewText}
+                        type={review.type}
+                        user={review.user}
+                        key={review.id}
+                        id={review.id}
+                    />
+                ))}
+            </motion.div>
+            <button onClick={addReview}><p> загрузить еще</p></button>
+        </section >
     )
 };
 

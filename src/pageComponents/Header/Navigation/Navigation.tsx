@@ -8,7 +8,7 @@ const links = [
     name: "Биржа",
   },
   {
-    href: "/",
+    href: "#work",
     name: "Ворки",
   },
   {
@@ -16,11 +16,11 @@ const links = [
     name: "Конкурсы",
   },
   {
-    href: "/",
+    href: "/create-work",
     name: "Создать ворк",
   },
   {
-    href: "/",
+    href: "/create-order",
     name: "Создать заказ",
   },
 ];

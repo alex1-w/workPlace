@@ -18,6 +18,8 @@
   --violet: #5E4EDB;
   --black: #222222;
   --super-light-gray: #F7F6FF;
+  --light-green: #D7FFEC;
+  --gray: #B0AAD0;
 }
 
 html,
@@ -51,6 +53,11 @@ h6,
 p {
   color: var(--main-text-dark);
   font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+  font-style: 24px;
 }
 
 button {

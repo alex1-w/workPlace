@@ -1,0 +1,39 @@
+.main {
+    cursor: pointer;
+    overflow: hidden;
+    border-bottom: 2px solid var(--gray);
+    width: 100%;
+
+    >div {
+        padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: 0.2s transform;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        p {
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        &.active {
+            >svg {
+                transition: 0.2s transform;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    >div:last-child {
+        p {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.main {
+    padding: 0 30px;
+    border-top: 2px solid var(--light-gray);
+    background-color: var(--super-light-gray);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // display: grid;
+    // grid-template-columns: 10% 80% 10%;
+    // gap: 10px;
+
+
+    >div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--gray);
+    }
+
+    >button {
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: var(--green);
+
+        p {
+            color: var(--p-light);
+            font-weight: 500;
+        }
+    }
+}
+
+.inputBlock {
+    width: 70%;
+    border-radius: 20px;
+    padding: 0 15px;
+    background-color: var(--light-gray);
+
+    >input {
+        height: 40px;
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,32 @@
+.main {
+    // width: 759px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    >div:first-child {
+        width: 750px;
+        height: 430px;
+        position: relative;
+    }
+}
+
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &__askBlock {
+        padding-left: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__additionalInfo {
+        padding-left: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

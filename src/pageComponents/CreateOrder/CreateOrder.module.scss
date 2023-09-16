@@ -1,0 +1,59 @@
+.main {
+    background-color: var(--super-light-gray);
+    height: 700px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: fit-content;
+
+    >textarea {
+        background-color: inherit;
+        resize: none;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: inherit;
+
+        &:focus {
+            border: none;
+        }
+    }
+}
+
+.btnsBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >a {
+        padding: 15px 25px;
+        border-radius: 25px;
+        background-color: var(--light-gray);
+
+        >p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    >button {
+        background-color: var(--green);
+        padding: 15px 25px;
+        border-radius: 25px;
+
+        >p {
+            color: var(--light-gray);
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+    }
+}
