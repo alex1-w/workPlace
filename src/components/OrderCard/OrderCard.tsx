@@ -2,11 +2,12 @@ import styles from './OrderCard.module.scss'
 import { FC } from 'react'
 import { IOrder } from '@/types/IOrder'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const OrderCard: FC<IOrder> = ({ owner, price, title, createdAt, offers }) => {
 
     return (
-        <div className={styles.main}>
+        <Link href='/order' className={styles.main}>
             <div className={styles.mainInfo}>
 
                 <p>{title}</p>
@@ -30,6 +31,6 @@ export const OrderCard: FC<IOrder> = ({ owner, price, title, createdAt, offers }
                 </div>
                 <p>Предложений: {offers}</p>
             </div>
-        </div>
+        </Link>
     )
 }

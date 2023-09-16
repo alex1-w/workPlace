@@ -1,9 +1,6 @@
 import styles from "./Work.module.scss";
 import Image from "next/image";
 import { FC } from "react";
-import { Button } from "../UI/Button/Button";
-import image from "../../icons/profileImg.png";
-import Link from "next/link";
 import LinkButton from "../UI/LinkButton/LinkButton";
 
 interface IWork {
