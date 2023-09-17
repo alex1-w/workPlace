@@ -9,7 +9,7 @@ export default function Authorizations() {
             <Link href="/">
                 <p>Регистрация</p>
             </Link>
-            <Link href="/">
+            <Link href="/login">
                 <p>Войти</p>
             </Link>
         </div>

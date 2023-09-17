@@ -7,7 +7,7 @@ import Link from 'next/link'
 export const OrderCard: FC<IOrder> = ({ owner, price, title, createdAt, offers }) => {
 
     return (
-        <Link href='/order' className={styles.main}>
+        <Link href='/customer-order' className={styles.main}>
             <div className={styles.mainInfo}>
 
                 <p>{title}</p>

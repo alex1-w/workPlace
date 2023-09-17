@@ -1,0 +1,46 @@
+.main {
+    padding: 20px;
+    border: 1px solid var(--light-gray);
+    border-radius: 20px;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.mainInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    >div:first-child {
+        >p {
+            // color: ;
+            font-size: 20px;
+        }
+    }
+
+    >div:last-child {
+        display: flex;
+        flex-direction: column;
+
+        >p:first-child {
+            font-size: 18px;
+            color: var(--green);
+            font-weight: 600;
+        }
+
+        >p:last-child {
+            font-size: 16px;
+        }
+    }
+}
+
+.descriptionBlock {}
+
+.documentsBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
