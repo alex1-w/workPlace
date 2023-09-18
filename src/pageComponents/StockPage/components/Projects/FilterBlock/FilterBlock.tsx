@@ -24,15 +24,15 @@ export const FilterBlock = () => {
 
     const changeHandler = (value: string) => setFilter({ filter: value })
 
-    const selectedFilter = filterOptions.find(item =>item.value === filterState.filter)
+    const selectedFilter = filterOptions.find(item => item.value === filterState.filter)
 
     return (
         <div className={styles.main}>
             <div>
 
-                <Field placeholder='Mинимальная цена' type='text' variant='simple' />
+                <Field name='' placeholder='Mинимальная цена' type='text' variant='simple' />
                 <span></span>
-                <Field placeholder='Максимальная цена' type='text' variant='simple' />
+                <Field name='' placeholder='Максимальная цена' type='text' variant='simple' />
 
             </div>
 

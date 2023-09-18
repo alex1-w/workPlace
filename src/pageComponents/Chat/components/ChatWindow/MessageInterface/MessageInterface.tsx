@@ -12,8 +12,6 @@ export const MessageInterface = () => {
                 <input type="text" placeholder='Введите Ваше сообщение' />
             </div>
 
-            {/* <Field placeholder='Введите Ваше сообщение' type='text' variant='simple' /> */}
-
             <button><p>Отправить</p></button>
 
         </div>

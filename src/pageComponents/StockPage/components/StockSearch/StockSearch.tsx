@@ -17,7 +17,7 @@ const StockSearch: FC = () => {
                     </h1>
                 </div>
                 <div className={styles.searchBlock}>
-                    <Field placeholder="Какую работу ищeте?" type="text" />
+                    <Field name="" placeholder="Какую работу ищeте?" type="text" />
                     <div className={styles.searchBlock__tags}>
                         {jobLinks.map((item) => (
                             <LinkButton

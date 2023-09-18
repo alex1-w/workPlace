@@ -58,7 +58,7 @@ export default function Promo() {
                     </div>
 
                     <div className={styles.searchBlock}>
-                        <Field type="text" placeholder="Что нужно сделать?" />
+                        <Field name="search" type="text" placeholder="Что нужно сделать?" />
                         <p>Выберите рубрику чтобы начать</p>
 
                         <div className={styles.searchBlock__tagsBlock}>

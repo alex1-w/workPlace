@@ -41,7 +41,6 @@ export const WorkInfo = () => {
 
                     <div className={styles.mainInfo__askBlock}>
                         {asks.map(item => (
-                            // <DiscloserText text={item.text} title={item.title} key={item.title} />
                             <DiscloserData text={item.text} title={item.title} key={item.title} />
                         ))}
                     </div>
