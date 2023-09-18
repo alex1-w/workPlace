@@ -19,7 +19,7 @@ const CreateOrder: FC = () => {
                     <h1>Опубликуйте ваш заказ</h1>
                     <div className={styles.formItem}>
                         <p>Название:</p>
-                        <Field placeholder='title' type='text' variant='formVariant' />
+                        <Field name='title' placeholder='title' type='text' variant='formVariant' />
                     </div>
 
                     <div className={styles.formItem}>
@@ -31,7 +31,7 @@ const CreateOrder: FC = () => {
 
                     <div>
                         <p>Бюджет в тенге</p>
-                        <Field placeholder='0' type='number' variant='formVariant' />
+                        <Field name='' placeholder='0' type='number' variant='formVariant' />
                     </div>
 
                     <div className={styles.btnsBlock}>
