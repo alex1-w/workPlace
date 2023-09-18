@@ -3,7 +3,6 @@ import { FC } from "react"
 
 const PromoStartingItem: FC<{ img: any, title: string }> = ({ img, title }) => {
 
-
     return (
         <div className={styles.main}>
             {img}

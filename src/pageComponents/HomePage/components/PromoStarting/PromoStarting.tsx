@@ -1,30 +1,12 @@
 import styles from "./PromoStarting.module.scss";
-import {
-    promoStartingIconOne,
-    promoStartingIconThree,
-    promoStartingIconTwo,
-} from "@/icons/icons";
 import { FC } from "react";
 import PromoStartingItem from "./PromoStartingItem/PromoStartingItem";
 import { Container } from "@/components/Container/Container";
 import LinkButton from "@/components/UI/LinkButton/LinkButton";
 import officeImage from "@/icons/officeImage.png";
 import Image from "next/image";
+import { promoStartingItems } from "@/links/promoStartingLinks";
 
-const promoStartingItems = [
-    {
-        title: "Оплачивайте с р/с или карты компании",
-        img: promoStartingIconOne,
-    },
-    {
-        title: "Экономьте до 87% бюджета на фрилансе",
-        img: promoStartingIconTwo,
-    },
-    {
-        title: "Экономьте до 75% времени на решении фриланс задач",
-        img: promoStartingIconThree,
-    },
-];
 
 const PromoStarting: FC = () => {
     return (
@@ -42,7 +24,7 @@ const PromoStarting: FC = () => {
                             />
                         ))}
                     </div>
-                    
+
                     <h5>WorkTap — быстро, просто и безопасно!</h5>
                     <LinkButton link="/" name="Начать!" styleVariant="violetVariant" />
                 </div>
