@@ -5,7 +5,6 @@ import Link from "next/link";
 import LinkButton from "@/components/UI/LinkButton/LinkButton";
 import { works } from "@/links/links.data";
 
-
 const ActualWorks: FC = () => {
   return (
     <section className={styles.main} id="work">

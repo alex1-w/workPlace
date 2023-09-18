@@ -1,11 +1,10 @@
-
 import styles from "./Authorizations.module.scss";
 import Link from "next/link";
-import React from "react";
+import React, { FC } from "react";
 
-export default function Authorizations() {
+const Authorizations: FC<{ variant?: "headerVariant" | "burgerVariant" }> = ({ variant = "headerVariant" }) => {
     return (
-        <div className={styles.main}>
+        <div className={styles[variant]}>
             <Link href="/registration">
                 <p>Регистрация</p>
             </Link>
@@ -15,3 +14,5 @@ export default function Authorizations() {
         </div>
     );
 }
+
+export default Authorizations

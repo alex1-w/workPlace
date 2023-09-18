@@ -1,7 +1,8 @@
-.main {
+.headerVariant {
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 100%;
 
     a {
         border-radius: 20px;
@@ -25,4 +26,24 @@
         }
     }
 
+    @media screen and (max-width: 1025px) {
+        display: none;
+    }
+}
+
+.burgerVariant {
+    display: flex;
+    padding: 0 15px;
+    width: 100%;
+    justify-content: space-between;
+
+    a {
+        border-radius: 20px;
+        background-color: var(--green);
+        padding: 10px 20px;
+
+        p {
+            color: var(--p-light);
+        }
+    }
 }

@@ -5,37 +5,8 @@ import promoImage from "@/icons/promo.png";
 import Link from "next/link";
 import { Field } from "@/components/UI/Field/Field";
 import LinkButton from "@/components/UI/LinkButton/LinkButton";
+import { tags } from "@/links/tags";
 
-export const tags = [
-    {
-        name: "Тексты и переводы",
-        link: "/",
-    },
-    {
-        name: "Разработка",
-        link: "/",
-    },
-    {
-        name: "Дизайн",
-        link: "/",
-    },
-    {
-        name: "Аудио, видео монтаж",
-        link: "/",
-    },
-    {
-        name: "SEO и оптимизация",
-        link: "/",
-    },
-    {
-        name: "Бизнес и жизнь",
-        link: "/",
-    },
-    {
-        name: "Соцсети и реклама",
-        link: "/",
-    },
-];
 
 export default function Promo() {
     return (

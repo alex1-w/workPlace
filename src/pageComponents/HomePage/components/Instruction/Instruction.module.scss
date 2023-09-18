@@ -25,3 +25,15 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+@media screen and (max-width:1330px) {
+    .main {
+        align-items: center;
+    }
+
+    .instructionCardBlock {
+        flex-direction: column;
+        align-items: center;
+    }
+}

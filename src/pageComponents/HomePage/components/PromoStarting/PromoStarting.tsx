@@ -31,24 +31,20 @@ const PromoStarting: FC = () => {
         <section className={styles.main}>
             <Container>
                 <div className={styles.wrapper}>
-                    <div>
-                        <h3>Как WorkTap помогает бизнесу?</h3>
-                        <div className={styles.promoCards}>
-                            {promoStartingItems.map((item) => (
-                                <PromoStartingItem
-                                    img={item.img}
-                                    title={item.title}
-                                    key={item.title}
-                                />
-                            ))}
-                        </div>
+                    <h3>Как WorkTap помогает бизнесу?</h3>
 
-                        <h5>WorkTap — быстро, просто и безопасно!</h5>
-                        <LinkButton link="/" name="Начать!" styleVariant="violetVariant" />
+                    <div className={styles.promoCards}>
+                        {promoStartingItems.map((item) => (
+                            <PromoStartingItem
+                                img={item.img}
+                                title={item.title}
+                                key={item.title}
+                            />
+                        ))}
                     </div>
-                    <div className={styles.imgBlock}>
-                        <Image alt="officeImage" src={officeImage} fill />
-                    </div>
+                    
+                    <h5>WorkTap — быстро, просто и безопасно!</h5>
+                    <LinkButton link="/" name="Начать!" styleVariant="violetVariant" />
                 </div>
             </Container>
         </section>
