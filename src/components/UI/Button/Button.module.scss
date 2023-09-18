@@ -1,4 +1,12 @@
 .linkVariant {
+width: 100%;
+    background-color: var(--green);
+    padding: 10px 20px;
+    border-radius: 20px;
 
-    bor
+    >button {
+        >p {
+            color: var(--gray);
+        }
+    }
 }

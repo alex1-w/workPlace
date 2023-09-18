@@ -15,6 +15,9 @@ export const Projects = () => {
             <div className={styles.projects}>
                 {myProjects.map(project => (
                     <OrderCard
+                        description={project.description}
+                        documents={project.documents}
+                        timeFrame={project.timeFrame}
                         category={project.category}
                         createdAt={project.createdAt}
                         id={project.id}
