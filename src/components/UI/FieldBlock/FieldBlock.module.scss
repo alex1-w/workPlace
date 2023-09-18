@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    // border: 1px solid red;
+    p {
+        font-size: 20px;
+    }
+}
+
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.errorBlock {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    p {
+        font-weight: 600;
+        font-size: 15px;
+        color: red;
+    }
+}

@@ -1,12 +1,22 @@
 .linkVariant {
-width: 100%;
+    width: 100%;
     background-color: var(--green);
     padding: 10px 20px;
     border-radius: 20px;
 
-    >button {
-        >p {
+    button {
+        p {
             color: var(--gray);
+            font-weight: 500;
         }
     }
 }
+
+
+// .main {
+//     button {
+//         p {
+//             font-size: 15px;
+//         }
+//     }
+// }

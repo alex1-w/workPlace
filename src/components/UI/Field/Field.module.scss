@@ -56,16 +56,16 @@
 }
 
 .formVariant {
-    max-width: 300px;
+    width: 100%;
     border-bottom: 1px solid var(--gray);
 
     >div:first-child {
         input {
             padding-left: 10px;
-            font-size: 18px;
+            font-size: 15px;
             width: 100%;
             color: var(--gray);
-            height: 40px;
+            height: 30px;
         }
     }
 

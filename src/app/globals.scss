@@ -1,25 +1,25 @@
-@import './assets/reset.scss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "./assets/reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   --main-text-dark: #000000;
-  --green: #1DBF73;
-  --main-bg: #F6FAFD;
-  --secondary-bg: #F7F6FF;
-  --light-gray: #F2F0FE;
-  --p-light: #F6FAFD;
-  --orange: #FBA457;
+  --green: #1dbf73;
+  --main-bg: #f6fafd;
+  --secondary-bg: #f7f6ff;
+  --light-gray: #f2f0fe;
+  --p-light: #f6fafd;
+  --orange: #fba457;
   --dark-gray: #656084;
-  --violet: #5E4EDB;
+  --violet: #5e4edb;
   --black: #222222;
-  --super-light-gray: #F7F6FF;
-  --light-green: #D7FFEC;
-  --gray: #B0AAD0;
+  --super-light-gray: #f7f6ff;
+  --light-green: #d7ffec;
+  --gray: #b0aad0;
 }
 
 html,
@@ -32,7 +32,6 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: var(--main-bg);
 }
-
 
 p {
   color: var(--black);
@@ -52,7 +51,7 @@ h5,
 h6,
 p {
   color: var(--main-text-dark);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -63,4 +62,8 @@ h1 {
 button {
   background-color: inherit;
   border: none;
+
+  p {
+    color: var(--light-gray);
+  }
 }

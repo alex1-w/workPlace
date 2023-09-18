@@ -106,7 +106,7 @@ export const freelancers: IFreelancer[] = [
         name: "Марина Королёва",
         profession: "Разработчик PHP",
         countProject: 44,
-        rating: 4,
+        rating: 2,
         img: profileIcon,
         id: 1,
     },
@@ -122,7 +122,7 @@ export const freelancers: IFreelancer[] = [
         name: "Ангелина Сорокина",
         profession: "Разработчик PHP",
         countProject: 44,
-        rating: 4,
+        rating: 1,
         img: profileIcon,
         id: 3,
     },
@@ -131,7 +131,7 @@ export const freelancers: IFreelancer[] = [
         profession: "Разработчик PHP",
         countProject: 44,
         img: profileIcon,
-        rating: 4,
+        rating: 5,
         id: 4,
     },
     {
@@ -139,7 +139,7 @@ export const freelancers: IFreelancer[] = [
         profession: "Разработчик PHP",
         img: profileIcon,
         countProject: 44,
-        rating: 4,
+        rating: 3,
         id: 5,
     },
     {
@@ -147,7 +147,7 @@ export const freelancers: IFreelancer[] = [
         profession: "Разработчик PHP",
         img: profileIcon,
         countProject: 44,
-        rating: 4,
+        rating: 3,
         id: 6,
     },
     {
@@ -155,7 +155,7 @@ export const freelancers: IFreelancer[] = [
         profession: "Разработчик PHP",
         img: profileIcon,
         countProject: 44,
-        rating: 4,
+        rating: 1,
         id: 7,
     },
     {
@@ -163,7 +163,7 @@ export const freelancers: IFreelancer[] = [
         profession: "Разработчик PHP",
         img: profileIcon,
         countProject: 44,
-        rating: 4,
+        rating: 2,
         id: 8,
     },
     {
@@ -171,7 +171,7 @@ export const freelancers: IFreelancer[] = [
         profession: "Разработчик PHP",
         img: profileIcon,
         countProject: 44,
-        rating: 4,
+        rating: 5,
         id: 9,
     },
     {
@@ -184,8 +184,6 @@ export const freelancers: IFreelancer[] = [
     },
 ];
 
-
-
 export const myProjects: IOrder[] = [
     {
         createdAt: '2.11.2019',
@@ -194,7 +192,10 @@ export const myProjects: IOrder[] = [
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
         id: 2,
-        category: 'design'
+        category: 'design',
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
 
     {
@@ -204,7 +205,10 @@ export const myProjects: IOrder[] = [
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
         id: 1,
-        category: 'design'
+        category: 'design',
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
     {
         createdAt: '2.11.2019',
@@ -213,7 +217,10 @@ export const myProjects: IOrder[] = [
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
         id: 3,
-        category: 'design'
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
+        category: 'design',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
     {
         createdAt: '2.11.2019',
@@ -222,16 +229,22 @@ export const myProjects: IOrder[] = [
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
         id: 4,
-        category: 'design'
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
+        category: 'design',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
     {
         createdAt: '11.03.2022',
         offers: 3,
         owner: freelancers[4],
         price: 2000,
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
         title: 'Нужно сделать Дизайн сайта по тематике авто',
         id: 5,
-        category: 'design'
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5,
+        category: 'design',
     },
     {
         createdAt: '11.03.2022',
@@ -239,8 +252,11 @@ export const myProjects: IOrder[] = [
         owner: freelancers[5],
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
         id: 6,
-        category: 'design'
+        category: 'design',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
     {
         createdAt: '11.03.2022',
@@ -249,7 +265,10 @@ export const myProjects: IOrder[] = [
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
         id: 7,
-        category: 'design'
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
+        category: 'design',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
     {
         createdAt: '11.03.2022',
@@ -257,8 +276,11 @@ export const myProjects: IOrder[] = [
         owner: freelancers[7],
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
         id: 8,
-        category: 'design'
+        category: 'design',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
     {
         createdAt: '11.03.2022',
@@ -266,8 +288,11 @@ export const myProjects: IOrder[] = [
         owner: freelancers[8],
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
         id: 1,
-        category: 'design'
+        category: 'design',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
     {
         createdAt: '11.03.2022',
@@ -275,8 +300,11 @@ export const myProjects: IOrder[] = [
         owner: freelancers[9],
         price: 2000,
         title: 'Нужно сделать Дизайн сайта по тематике авто',
+        description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',
         id: 10,
-        category: 'design'
+        category: 'design',
+        documents: ['5hyrtsbfd', 't4grew', 't4g3werdf'],
+        timeFrame: 5
     },
 
 ]

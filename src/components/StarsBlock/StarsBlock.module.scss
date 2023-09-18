@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    gap: 5px;
+    color: rgb(124, 124, 188);
+}
+
+.yellowStar {
+    svg {
+        fill: #FBA457;
+    }
+}
+
+.emptyStar {
+    svg {
+        fill: rgb(124, 124, 188);
+    }
+}

@@ -1,24 +1,34 @@
-import styles from './Field.module.scss'
-import { FC, DetailedHTMLProps, InputHTMLAttributes } from 'react'
+import styles from "./Field.module.scss";
+import { FC, DetailedHTMLProps, InputHTMLAttributes } from "react";
+import { IField } from "./IField";
 
-interface IField {
-    name?: string
-    placeholder: string
-    type: string
-    btnName?: string
-    variant?: 'withButton' | 'simple' | "formVariant"
-}
+export const Field: FC<
+    IField &
+    DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+> = ({
+    rules,
+    errors,
+    register,
+    variant = "withButton",
+    name,
+    placeholder,
+    btnName = "Найти",
+    ...rest
+}) => {
+        return (
+            <div className={styles[variant]}>
+                <div>
+                    <input
+                        {...(register && register(name, { ...rules }))}
+                        name={name}
+                        {...rest}
+                        placeholder={placeholder}
+                    />
+                </div>
 
-export const Field: FC<IField & DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>> = ({ variant = 'withButton', name = 'search', placeholder, btnName = 'Найти', ...rest }) => {
-    return (
-        <div className={styles[variant]}>
-            <div>
-                <input name={name} {...rest} placeholder={placeholder} />
+                <button>
+                    <p>{btnName}</p>
+                </button>
             </div>
-
-            <button>
-                <p>{btnName}</p>
-            </button>
-        </div>
-    )
-}
+        );
+    };

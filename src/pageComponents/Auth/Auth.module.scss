@@ -1,0 +1,22 @@
+.main {
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    >div:first-child {
+        padding: 20px 0;
+
+    }
+}
+
+
+.imgBlock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

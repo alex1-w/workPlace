@@ -6,7 +6,7 @@ import React from "react";
 export default function Authorizations() {
     return (
         <div className={styles.main}>
-            <Link href="/">
+            <Link href="/registration">
                 <p>Регистрация</p>
             </Link>
             <Link href="/login">

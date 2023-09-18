@@ -2,6 +2,7 @@ import styles from "./Work.module.scss";
 import Image from "next/image";
 import { FC } from "react";
 import LinkButton from "../UI/LinkButton/LinkButton";
+import StarsBlock from "../StarsBlock/StarsBlock";
 
 interface IWork {
     title: string;

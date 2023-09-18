@@ -8,6 +8,7 @@ interface IButtonProps {
     type: string;
     variant: styleVariant;
     name: string;
+    isValid: boolean;
 }
 
 export const Button: FC<
@@ -16,10 +17,11 @@ export const Button: FC<
         ButtonHTMLAttributes<HTMLButtonElement>,
         HTMLButtonElement
     >
-> = ({ variant, type, name, ...rest }) => {
+> = ({ isValid, variant, type, name, ...rest }) => {
     return (
         <div className={styles.main}>
             <button
+                disabled={!isValid}
                 type={type}
                 className={cn(styles.main, styles[variant])}
                 {...rest}

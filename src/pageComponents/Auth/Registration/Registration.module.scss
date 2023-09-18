@@ -1,0 +1,12 @@
+.main {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

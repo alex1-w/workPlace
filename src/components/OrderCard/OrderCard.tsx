@@ -3,6 +3,7 @@ import { FC } from 'react'
 import { IOrder } from '@/types/IOrder'
 import Image from 'next/image'
 import Link from 'next/link'
+import StarsBlock from '../StarsBlock/StarsBlock'
 
 export const OrderCard: FC<IOrder> = ({ owner, price, title, createdAt, offers }) => {
 
@@ -18,7 +19,7 @@ export const OrderCard: FC<IOrder> = ({ owner, price, title, createdAt, offers }
                     <div>
                         <p>{owner.name}</p>
                         <p>Размещено проектов на бирже: {owner.countProject}</p>
-                        <div>средний рейтинг: {owner.rating}</div>
+                        <StarsBlock ratingCount={owner.rating} />
                     </div>
                 </div>
 
