@@ -18,7 +18,7 @@ const BurgerMenu: FC = () => {
                 <span></span>
             </div>
 
-            {isMenu && <DrawerMenu />}
+             <DrawerMenu isMenu={isMenu}/>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 .main {
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    max-height: 200px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -8,5 +8,9 @@
     svg {
         width: 82px;
         height: 82px;
+    }
+
+    @media screen and (max-width: 500px) {
+        max-width: 300px;
     }
 }

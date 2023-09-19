@@ -14,4 +14,13 @@
             background-color: var(--dark-gray);
         }
     }
+
+    @media screen and (max-width: 640px) {
+        padding-top: 20px;
+        flex-direction: column-reverse;
+
+        >div:first-child {
+            // flex-direction: column;
+        }
+    }
 }

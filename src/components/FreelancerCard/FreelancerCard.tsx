@@ -1,11 +1,11 @@
+import styles from "./FreelancerCard.module.scss";
 import Image from "next/image";
 import { Button } from "../UI/Button/Button";
 import LinkButton from "../UI/LinkButton/LinkButton";
-import styles from "./FreelancerCard.module.scss";
 import { FC } from "react";
 import { IFreelancer } from "@/types/IFreelancer";
 import Link from "next/link";
-
+import CardWrapper from "../CardWrapper/CardWrapper";
 
 const FreelancerCard: FC<IFreelancer> = ({
     countProject,
@@ -16,16 +16,26 @@ const FreelancerCard: FC<IFreelancer> = ({
     img,
 }) => {
     return (
-        <Link href='user-profile' className={styles.main}>
-            <div className={styles.mainContent}>
-                <Image alt="profileIcon" src={img} width={150} height={150} />
-                <div className={styles.cardDescription}>
-                    <p>{name}</p>
-                    <p>{profession}</p>
-                    <p>выпонено проектов: {countProject}</p>
+        <Link href="user-profile">
+            <CardWrapper>
+
+                <div className={styles.main}>
+
+                    <div className={styles.mainContent}>
+                        <div className={styles.imgBlock}>
+                            <Image alt="profileIcon" src={img} fill />
+                        </div>
+                        <div className={styles.cardDescription}>
+                            <p>{name}</p>
+                            <p>{profession}</p>
+                            <p>выпонено проектов: {countProject}</p>
+                        </div>
+                    </div>
+                    <LinkButton link="/chat" styleVariant="miniLink" name="Написать" />
+
                 </div>
-            </div>
-            <LinkButton link="/chat" styleVariant="miniLink" name="Написать" />
+
+            </CardWrapper>
         </Link>
     );
 };

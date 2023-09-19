@@ -1,16 +1,21 @@
-import styles from './OrderCard.module.scss'
-import { FC } from 'react'
-import { IOrder } from '@/types/IOrder'
-import Image from 'next/image'
-import Link from 'next/link'
-import StarsBlock from '../StarsBlock/StarsBlock'
+import styles from "./OrderCard.module.scss";
+import { FC } from "react";
+import { IOrder } from "@/types/IOrder";
+import Image from "next/image";
+import Link from "next/link";
+import StarsBlock from "../StarsBlock/StarsBlock";
 
-export const OrderCard: FC<IOrder> = ({ owner, price, title, createdAt, offers }) => {
-
+export const OrderCard: FC<IOrder> = ({
+    owner,
+    price,
+    title,
+    createdAt,
+    offers,
+}) => {
     return (
-        <Link href='/customer-order' className={styles.main}>
+        <Link href="/customer-order" className={styles.main}>
+            
             <div className={styles.mainInfo}>
-
                 <p>{title}</p>
 
                 <div className={styles.customerInfo}>
@@ -22,7 +27,6 @@ export const OrderCard: FC<IOrder> = ({ owner, price, title, createdAt, offers }
                         <StarsBlock ratingCount={owner.rating} />
                     </div>
                 </div>
-
             </div>
 
             <div className={styles.additionalInfo}>
@@ -32,6 +36,7 @@ export const OrderCard: FC<IOrder> = ({ owner, price, title, createdAt, offers }
                 </div>
                 <p>Предложений: {offers}</p>
             </div>
+
         </Link>
-    )
-}
+    );
+};

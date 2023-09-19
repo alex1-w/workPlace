@@ -7,7 +7,9 @@
     flex-direction: column;
     gap: 20px;
 
+
     >div:first-child {
+        padding: 0 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -22,4 +24,14 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 920px) {
+
+    .projectsBlock {
+        >div:first-child {
+            flex-direction: column;
+        }
+    }
 }
