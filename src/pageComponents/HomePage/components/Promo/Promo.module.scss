@@ -81,10 +81,12 @@
 
     .wrapper {
         flex-direction: column;
+        position: relative;
     }
 
     .textContent {
         z-index: 100;
+
 
         >div:first-child {}
     }
@@ -96,7 +98,12 @@
     }
 
     .imgBlock {
-
+        // display: ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // width: 70%;
+        // height: fit-content;
 
         img {}
     }

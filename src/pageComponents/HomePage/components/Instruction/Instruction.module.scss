@@ -29,6 +29,17 @@
 @media screen and (max-width:1330px) {
     .main {
         align-items: center;
+
+        >div:first-child {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h3,
+            h4 {
+                text-align: center;
+            }
+        }
     }
 
     .instructionCardBlock {
