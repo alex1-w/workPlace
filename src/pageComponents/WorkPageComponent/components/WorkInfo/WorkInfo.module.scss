@@ -1,13 +1,15 @@
 .main {
-    // width: 759px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--gray);
+    padding: 20px 10px;
 
-    >div:first-child {
-        width: 750px;
-        height: 430px;
-        position: relative;
+    img {
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
     }
 }
 

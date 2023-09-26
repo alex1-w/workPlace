@@ -22,9 +22,9 @@ const FreelancerCard: FC<IFreelancer> = ({
                 <div className={styles.main}>
 
                     <div className={styles.mainContent}>
-                        <div className={styles.imgBlock}>
-                            <Image alt="profileIcon" src={img} fill />
-                        </div>
+
+                        <Image alt="profileIcon" src={img} />
+
                         <div className={styles.cardDescription}>
                             <p>{name}</p>
                             <p>{profession}</p>

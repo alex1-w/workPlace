@@ -3,6 +3,15 @@
 
 @mixin cardWrapper {}
 
+@mixin preventHighlightedText {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -22,6 +31,8 @@
   --super-light-gray: #f7f6ff;
   --light-green: #d7ffec;
   --gray: #b0aad0;
+  --tablet: 768px;
+  --mobile: 425px;
 }
 
 html,
@@ -49,6 +60,7 @@ body {
 
 p {
   color: var(--black);
+  font-size: 18px;
 }
 
 :-webkit-any(article, aside, nav, section) h1 {
@@ -82,42 +94,48 @@ button {
   }
 }
 
-h1{
+h1 {
   font-size: 24px;
 }
-h2{
+
+h2 {
   font-size: 22px;
 }
-h3{
+
+h3 {
   font-size: 20px;
 }
-h4{
+
+h4 {
   font-size: 18px;
 }
-h5{
+
+h5 {
   font-size: 16px;
-}
-p{
-  font-size: 19px;
 }
 
 @media screen and (max-width: 768px) {
-  h1{
+  h1 {
     font-size: 20px;
   }
-  h2{
+
+  h2 {
     font-size: 18px;
   }
-  h3{
+
+  h3 {
     font-size: 16px;
   }
-  h4{
+
+  h4 {
     font-size: 14px;
   }
-  h5{
+
+  h5 {
     font-size: 13px;
   }
-  p{
+
+  p {
     font-size: 15px;
   }
 }

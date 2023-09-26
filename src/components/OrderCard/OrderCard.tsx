@@ -14,12 +14,12 @@ export const OrderCard: FC<IOrder> = ({
 }) => {
     return (
         <Link href="/customer-order" className={styles.main}>
-            
+
             <div className={styles.mainInfo}>
                 <p>{title}</p>
 
                 <div className={styles.customerInfo}>
-                    <Image alt={owner.name} src={owner.img} width={120} height={120} />
+                    <Image alt={owner.name} src={owner.img} />
 
                     <div>
                         <p>{owner.name}</p>

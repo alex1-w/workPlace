@@ -2,7 +2,7 @@
 import styles from './DiscloserData.module.scss'
 import { FC, useRef, useState } from 'react'
 import { arrowDownIcon } from '@/icons/icons'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 
 export const DiscloserData: FC<{ title: string, text: React.ReactNode }> = ({ text, title }) => {
     const [isDiscloserText, setIsDiscloserText] = useState<boolean>(false)
@@ -14,21 +14,23 @@ export const DiscloserData: FC<{ title: string, text: React.ReactNode }> = ({ te
     }
 
     return (
-        <motion.div
-            className={styles.main}
-            initial={{ height: '35px' }}
-            animate={isDiscloserText ? { height: 'auto' } : { height: '35px' }}
-            exit={{ height: '23px' }}
-            onClick={showText}
-        >
+        <div className={styles.main} onClick={showText}>
             <div ref={ref}>
                 <p>{title}</p>
                 {arrowDownIcon}
             </div>
 
-            <div>
-                <p>{text}</p>
-            </div>
-        </motion.div>
+            <AnimatePresence>
+                {isDiscloserText &&
+                    <motion.div
+                        className={styles.mainContent}
+                        initial={{ height: 0 }}
+                        animate={{ height: 'auto' }}
+                        exit={{ height: 0 }}
+                    >
+                        <p>{text}</p>
+                    </motion.div>}
+            </AnimatePresence>
+        </div>
     )
 }

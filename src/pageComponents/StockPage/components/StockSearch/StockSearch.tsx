@@ -1,5 +1,5 @@
-import { Field } from "@/components/UI/Field/Field";
 import styles from "./StockSearch.module.scss";
+import { Field } from "@/components/UI/Field/Field";
 import { FC } from "react";
 import LinkButton from "@/components/UI/LinkButton/LinkButton";
 import { arrowDownIcon } from "@/icons/icons";

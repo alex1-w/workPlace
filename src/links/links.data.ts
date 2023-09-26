@@ -190,7 +190,7 @@ export const myProjects: IOrder[] = [
         offers: 3,
         owner: freelancers[0],
         price: 2000,
-        title: 'Нужно сделать Дизайн сайта по тематике авто',
+        title: 'Нужно сделать Дизайн сайfffffffffffffffffffffffnm vrejhfdsjhdscver fdevhdnm wef wefewffewта по тематике авто',
         id: 2,
         category: 'design',
         description: 'gregrerhejeyteyjo rthljohtrmsbl; oihgerh igenrkiohgerjlkdfm',

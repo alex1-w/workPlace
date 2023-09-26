@@ -28,9 +28,8 @@ export const WorkInfo = () => {
 
     return (
         <div className={styles.main}>
-            <div>
-                <Image alt={work.title} src={work.img} fill />
-            </div>
+
+            <Image alt={work.title} src={work.img} />
 
             <div className={styles.mainInfo}>
                 <p>{work.description}</p>

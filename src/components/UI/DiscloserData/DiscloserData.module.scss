@@ -1,10 +1,12 @@
 .main {
     cursor: pointer;
-    overflow: hidden;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
     border-bottom: 2px solid var(--gray);
     width: 100%;
 
-    >div {
+    >div:first-child {
         padding: 5px 0;
         display: flex;
         align-items: center;
@@ -20,7 +22,6 @@
         p {
             font-weight: 500;
             font-size: 18px;
-
         }
 
         &.active {
@@ -30,11 +31,12 @@
             }
         }
     }
+}
 
-    >div:last-child {
-        p {
-            font-weight: 400;
-            font-size: 16px;
-        }
+.mainContent{
+    overflow: hidden;
+    p {
+        font-weight: 400;
+        font-size: 16px;
     }
 }
