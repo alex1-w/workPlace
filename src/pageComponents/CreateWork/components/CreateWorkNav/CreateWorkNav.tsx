@@ -26,8 +26,9 @@ export const CreateWorkNav = () => {
         <nav className={styles.main}>
             <ul>
                 {createWorkNav.map((item, i) => (
+
                     <li key={item.name} className={styles.step}>
-                        <span />
+                        {/* <span /> */}
                         <div>
                             <div>
                                 <p>{i + 1}</p>
@@ -35,8 +36,9 @@ export const CreateWorkNav = () => {
                             <p>{item.name}</p>
 
                         </div>
-                        <span />
+                        {/* <span /> */}
                     </li>
+
                 ))}
             </ul>
         </nav >

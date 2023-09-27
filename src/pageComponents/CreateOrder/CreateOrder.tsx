@@ -35,9 +35,7 @@ const CreateOrder: FC = () => {
                     </div>
 
                     <div className={styles.btnsBlock}>
-                        {/* <button onClick={() =>{ navigate.push('/')}}></button> */}
                         <Link href='/' ><p>На главную</p></Link>
-
                         <button><p>Опубликовать</p></button>
                     </div>
                 </div>
