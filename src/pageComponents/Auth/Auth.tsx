@@ -2,7 +2,8 @@
 import styles from "./Auth.module.scss";
 import Image from "next/image";
 import { FC } from "react";
-import authImage from "@/icons/authImage.png";
+import loginImage from "@/icons/authImage.png";
+import registrationImage from '@/icons/registrationImage.png'
 import { Logo } from "@/components/Logo/Logo";
 import { Login } from "./Login/Login";
 import { usePathname } from "next/navigation";
@@ -12,6 +13,7 @@ import HomePage from "../HomePage/HomePage";
 const Auth: FC = () => {
     const pathname = usePathname();
     console.log(pathname);
+    const imageVariant = pathname === '/login' ? loginImage : pathname === '/registration' ? registrationImage : ''
 
     return (
         <main className={styles.main}>
@@ -29,7 +31,7 @@ const Auth: FC = () => {
                 </div>
 
                 <div className={styles.imgBlock}>
-                    <Image alt="authImage" src={authImage} fill />
+                    <Image alt="authImage" src={imageVariant} fill />
                 </div>
             </div>
         </main>

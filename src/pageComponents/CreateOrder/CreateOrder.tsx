@@ -9,7 +9,6 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const CreateOrder: FC = () => {
-    // const navigate = useRouter()
 
     return (
         <main className={styles.main}>
