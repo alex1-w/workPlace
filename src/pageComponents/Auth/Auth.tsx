@@ -18,7 +18,7 @@ const Auth: FC = () => {
     return (
         <main className={styles.main}>
             <div className={styles.wrapper}>
-                <div>
+                <div className={styles.wrapper__pageVariant}>
                     <Logo />
                     {pathname === "/login" ? (
                         <Login />

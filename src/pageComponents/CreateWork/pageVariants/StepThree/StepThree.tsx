@@ -5,6 +5,7 @@ import { useState } from "react";
 import { IQuestion } from "./IQuestion";
 import { StepThreeQuestion } from "./StepThreeQuestion/StepThreeQuestion";
 import { plusIcon } from "@/icons/icons";
+import { AddBtn } from "@/components/UI/AddBtn/AddBtn";
 
 export const apiKey = "zx7ykfpmfhkoi8hkbazov0fc5z50kw4vt4cobqsqbjqv564b";
 
@@ -31,14 +32,15 @@ export const StepThree = () => {
           {questions?.map((item) => (
             <StepThreeQuestion key={item.answer} />
           ))}
-          <button
+          {/* <button
             type="button"
             onClick={addQuestion}
             className={styles.addQuestion}
           >
             {plusIcon}
             Добавить вопрос-ответ
-          </button>
+          </button> */}
+          <AddBtn title="Добавить вопрос-ответ" onClick={addQuestion} />
         </div>
       </div>
     </main>

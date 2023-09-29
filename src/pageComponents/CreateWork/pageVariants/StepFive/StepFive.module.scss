@@ -1,0 +1,13 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 650px;
+    }
+}

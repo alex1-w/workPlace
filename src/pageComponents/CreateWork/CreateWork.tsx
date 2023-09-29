@@ -6,12 +6,16 @@ import { StepOne } from "./pageVariants/StepOne/StepOne";
 import { StepTwo } from "./pageVariants/StepTwo/StepTwo";
 import { StepThree } from "./pageVariants/StepThree/StepThree";
 import { StepFour } from "./pageVariants/StepFour/StepFour";
+import { StepFive } from "./pageVariants/StepFive/StepFive";
+import { StepSix } from "./pageVariants/StepSix/StepSix";
 
 enum Steps {
   one,
   two,
   three,
   four,
+  five,
+  six,
 }
 
 export const CreateWork = () => {
@@ -24,6 +28,8 @@ export const CreateWork = () => {
     ["stepTwo"]: <StepTwo />,
     ["stepThree"]: <StepThree />,
     ["stepFour"]: <StepFour />,
+    ["stepFive"]: <StepFive />,
+    ["stepSix"]: <StepSix />,
   };
 
   return (
@@ -34,6 +40,8 @@ export const CreateWork = () => {
       {step === 1 && steps.stepTwo}
       {step === 2 && steps.stepThree}
       {step === 3 && steps.stepFour}
+      {step === 4 && steps.stepFive}
+      {step === 5 && steps.stepSix}
     </main>
   );
 };
