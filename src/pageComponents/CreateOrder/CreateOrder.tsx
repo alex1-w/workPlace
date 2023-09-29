@@ -1,48 +1,64 @@
-'use client'
-import styles from './CreateOrder.module.scss';
-import { FC } from "react"
-import { Container } from '@/components/Container/Container';
-import { Field } from '@/components/UI/Field/Field';
-import SelectsBlock from './components/SelectsBlock/SelectsBlock';
-import LinkButton from '@/components/UI/LinkButton/LinkButton';
-import { useRouter } from 'next/router';
-import Link from 'next/link';
+"use client";
+import styles from "./CreateOrder.module.scss";
+import { FC } from "react";
+import { Container } from "@/components/Container/Container";
+import { Field } from "@/components/UI/Field/Field";
+import SelectsBlock from "./components/SelectsBlock/SelectsBlock";
+import LinkButton from "@/components/UI/LinkButton/LinkButton";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const CreateOrder: FC = () => {
+  return (
+    <main className={styles.main}>
+      <Container>
+        <div className={styles.wrapper}>
+          <h1>Опубликуйте ваш заказ</h1>
+          <div className={styles.formItem}>
+            <p>Название:</p>
+            <Field
+              name="title"
+              placeholder="title"
+              type="text"
+              variant="formVariant"
+            />
+          </div>
 
-    return (
-        <main className={styles.main}>
-            <Container>
-                <div className={styles.wrapper}>
+          <div className={styles.formItem}>
+            <p>Описание:</p>
+            <textarea
+              name=""
+              id=""
+              cols={40}
+              rows={10}
+              placeholder="кратко опишите свой ворк"
+            />
+          </div>
 
-                    <h1>Опубликуйте ваш заказ</h1>
-                    <div className={styles.formItem}>
-                        <p>Название:</p>
-                        <Field name='title' placeholder='title' type='text' variant='formVariant' />
-                    </div>
+          <SelectsBlock />
 
-                    <div className={styles.formItem}>
-                        <p>Описание:</p>
-                        <textarea name="" id="" cols={40} rows={10} placeholder='кратко опишите свой ворк' />
-                    </div>
+          <div>
+            <p>Бюджет в тенге</p>
+            <Field
+              name=""
+              placeholder="0"
+              type="number"
+              variant="formVariant"
+            />
+          </div>
 
-                    <SelectsBlock />
-
-                    <div>
-                        <p>Бюджет в тенге</p>
-                        <Field name='' placeholder='0' type='number' variant='formVariant' />
-                    </div>
-
-                    <div className={styles.btnsBlock}>
-                        <Link href='/' ><p>На главную</p></Link>
-                        <button>
-                            <p>Опубликовать</p>
-                        </button>
-                    </div>
-                </div>
-            </Container>
-        </main >
-    )
+          <div className={styles.btnsBlock}>
+            <Link href="/">
+              <p>На главную</p>
+            </Link>
+            <button>
+              <p>Опубликовать</p>
+            </button>
+          </div>
+        </div>
+      </Container>
+    </main>
+  );
 };
 
 export default CreateOrder;

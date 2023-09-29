@@ -25,6 +25,7 @@
   --light-gray: #f2f0fe;
   --p-light: #f6fafd;
   --orange: #fba457;
+  --light-red: #FFDBDB;
   --dark-gray: #656084;
   --violet: #5e4edb;
   --black: #222222;
@@ -92,10 +93,6 @@ button {
   p {
     color: var(--light-gray);
   }
-}
-
-h1 {
-  font-size: 24px;
 }
 
 h2 {

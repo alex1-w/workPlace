@@ -7,7 +7,7 @@ type styleVariant = "linkVariant" | "filterBtn";
 interface IButtonProps {
     type: string;
     variant: styleVariant;
-    name: string;
+    name    : string;
     isValid: boolean;
 }
 
