@@ -35,7 +35,9 @@ const CreateOrder: FC = () => {
 
                     <div className={styles.btnsBlock}>
                         <Link href='/' ><p>На главную</p></Link>
-                        <button><p>Опубликовать</p></button>
+                        <button>
+                            <p>Опубликовать</p>
+                        </button>
                     </div>
                 </div>
             </Container>

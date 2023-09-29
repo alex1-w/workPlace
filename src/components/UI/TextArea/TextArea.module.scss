@@ -1,0 +1,36 @@
+.main {
+    overflow: hidden;
+
+    >textarea {
+        background-color: inherit;
+        resize: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-family: inherit;
+
+        &:focus {
+            border: none;
+        }
+
+        &::-webkit-scrollbar {
+            margin-right: 10px;
+            border-radius: 15px;
+            width: 8px;
+            background-color: rgb(202, 202, 202);
+        }
+
+        &::-webkit-scrollbar-corner {
+            // background-color: red;
+        }
+
+        &::-webkit-scrollbar-track {
+            height: 90%;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 15px;
+            width: 10px;
+            background-color: blue;
+        }
+    }
+}

@@ -20,3 +20,25 @@ export const navLinks = [
         name: "Создать заказ",
     },
 ];
+
+
+export const createWorkNav = [
+    {
+        name: 'Основные',
+    },
+    {
+        name: 'Стоимость и опции',
+    },
+    {
+        name: 'Описание',
+    },
+    {
+        name: 'Требования',
+    },
+    {
+        name: 'Галерея',
+    },
+    {
+        name: 'Публикация',
+    }
+]

@@ -1,18 +1,13 @@
 .main {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-
-    // border: 1px solid red;
-    p {
-        font-size: 20px;
-    }
+    // gap: 5px;
 }
 
 .inputBlock {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    // gap: 10px;
     position: relative;
 }
 
